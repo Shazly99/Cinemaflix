@@ -1,0 +1,142 @@
+@import '../../../sass/';
+
+
+
+.body {
+    background-image: url('../../../assets/Img/EG-en-20221107-popsignuptwoweeks-perspective_alpha_website_large.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    // margin-top: -90px !important;
+    z-index: 0;
+    background-attachment: fixed;
+
+    @media screen and (max-width:767px) {
+        background-image: none !important;
+    }
+}
+
+.overlay__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh !important;
+    z-index: -1;
+    background-color: rgba($color: #000000, $alpha: 0.5) !important;
+
+}
+
+.register__header {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 28px;
+
+    @media screen and (max-width:767px) {
+        font-size: 1.5rem;
+        margin-bottom: 25px !important;
+    }
+}
+
+.form {
+    background-color: rgba(0, 0, 0, .75) !important;
+    border-radius: 4px !important;
+    padding: 30px 60px !important;
+    margin-bottom: 40px;
+    width: 50% !important;
+
+    @media screen and (max-width:767px) {
+        width: 100% !important;
+        padding: 30px 25px !important;
+        background-color: rgba(0, 0, 0) !important;
+
+        input {
+            width: 100% !important;
+            border-color: transparent !important;
+        }
+
+        transform: translateY(-50px) !important;
+    }
+}
+
+.first_name,
+.last_name,
+.age,
+.password,
+.email {
+    background-color: #333333 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    height: 50px !important;
+    width: 100% !important;
+    border-bottom: 2px solid transparent !important;
+
+    padding: {
+        left: 10px !important;
+        right: 10px !important;
+    }
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    input {
+        background-color: #333333 !important;
+        width: 90% !important;
+        margin: auto !important;
+
+    }
+
+    .item {
+        width: 100% !important;
+        border-radius: 4px !important;
+        padding: 30px 10px !important;
+    }
+
+}
+
+.submit__btn {
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin: 24px 0 12px !important;
+    max-width: 100%;
+    width: 100%;
+    height: 48px !important;
+    background: #e50914 !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.textColorError {
+    color: #e87c03 !important;
+}
+
+.DefaultValid {
+    border-bottom: 2px solid transparent !important;
+}
+
+
+.textColorSucess {
+    border-bottom: 2px solid rgb(4, 237, 4) !important;
+
+}
+
+.errorInput {
+    border-bottom: 2px solid #e87c03 !important;
+}
+
+
+ 
+label{
+    color: #f1f1f1 !important;
+    opacity: 0.7;
+}

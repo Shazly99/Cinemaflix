@@ -1,0 +1,30 @@
+ @import 'varibale';
+ 
+ body{
+    background-color: white !important;
+    font-family: $fontStyle !important;
+    //  color:  !important;
+  }
+
+ ::-webkit-scrollbar{
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-color:transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: transparen;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color:transparent;
+  }
+  
+
+  .Outlet{
+    margin-top: 56px !important; 
+  }
+ 
