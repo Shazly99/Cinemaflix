@@ -12,11 +12,12 @@ function MoviesDetails() {
   let { production_companies,vote_average, overview, first_air_date, runtime, birthday, profile_path, backdrop_path, belongs_to_collection, name, biography, genres, poster_path, title } = details;
   console.log(details);
   return (
-    <div className='bg__image' style={{ backgroundImage: `url(${process.env.REACT_APP_IMAGE_MASTER_PATH + backdrop_path})` }}>
-      <div className='custom__bg' >
+<>
 
         {
           isLoading2 ? <Component.Loading /> :
+<div className='bg__image' style={{ backgroundImage: `url(${process.env.REACT_APP_IMAGE_MASTER_PATH + backdrop_path})` }}>
+      <div className='custom__bg' >
 
             <Container className='pt-4' >
               <Row>
@@ -108,7 +109,7 @@ function MoviesDetails() {
                   <div className="production_companies position-absolute ">
                     {
                       production_companies?.map((item,index)=>(
-                        <img  key={index} src={process.env.REACT_APP_IMAGE_MASTER_PATH+item.logo_path}  />
+                        <img  key={index} src={process.env.REACT_APP_IMAGE_MASTER_PATH+item?.logo_path}  />
                       ))
                     }
                   </div>
@@ -118,9 +119,11 @@ function MoviesDetails() {
               </Row>
             </Container>
 
-        }
       </div>
     </div>
+        }
+
+</>
   )
 }
 
