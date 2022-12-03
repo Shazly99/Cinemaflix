@@ -19,7 +19,7 @@ function Footer() {
     <>
       <div className="footer">
         <Container>
-          <Row className='d-flex gap-5 text-center'>
+          <Row className='d-flex gap-5   '>
             <Col xl={2} className='d-flex flex-column gap-5'>
               <img src={icon.logoFooter} className='w-100' />
               <Link to={'/profile'} className='footer__btn'>Hi {userData.first_name}</Link>
