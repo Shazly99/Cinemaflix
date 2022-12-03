@@ -21,14 +21,7 @@ function Login({saveUserData}) {
   let validation = valid.validationlogin(user)
 
 
-    // if (data.message == 'success') {
-    //   // setInterval(() => { setIsLoading(false) }, 4000);
-    //   toast.success(data.message); 
-    //   navigation('/login')
-    // } else {
-    //   toast.error(data.message);
-    //   // setInterval(() => { setIsLoading(false) }, 4000);
-    // }
+   
   const getForm = (e) => {
     let currUser = { ...user };
     currUser[e.target.name] = e.target.value;

@@ -108,7 +108,7 @@ function MoviesDetails() {
                   <div className="production_companies position-absolute ">
                     {
                       production_companies?.map((item,index)=>(
-                        <img  key={index} src={process.env.REACT_APP_IMAGE_MASTER_PATH+item.logo_path} alt="" srcset="" />
+                        <img  key={index} src={process.env.REACT_APP_IMAGE_MASTER_PATH+item.logo_path}  />
                       ))
                     }
                   </div>

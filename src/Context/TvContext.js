@@ -18,8 +18,7 @@ function TvContext({ children }) {
     setPerson(data.results)
   }
 
-  const getData = async (e) => {
-    console.log(e.target.value);
+  const getData = async (e) => { 
     if (e.target.value) {
       let { data } = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=cb9d54251bfb16d22a9165b924cf3c91&language=en-US&query=${e.target.value}&page=1&include_adult=false`)
       setCategory(data.results)
