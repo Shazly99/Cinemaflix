@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
 
 function People() {
 
-  let dispatch = useDispatch()
-  let { personData } = useSelector((state) => state.person)
+  // let dispatch = useDispatch()
+  // let { personData } = useSelector((state) => state.person)
 
-  useEffect(() => {
-    dispatch(getPersons())
-  }, [])
+  // useEffect(() => {
+  //   dispatch(getPersons())
+  // }, [])
 
   return (
     <>
-      <Container>
+      {/* <Container>
         <Row>
           {
             personData?.map((item, index) => (
@@ -34,7 +34,7 @@ function People() {
             ))
           }
         </Row>
-      </Container>
+      </Container> */}
     </>
   )
 }

@@ -1,12 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit"; 
-import personReducer from "./personSlice";
+// import { configureStore } from "@reduxjs/toolkit"; 
+// import personReducer from "./personSlice";
 
-let store=configureStore({
-    reducer:{
-        person:personReducer
-    }
-})
+// let store=configureStore({
+//     reducer:{
+//         person:personReducer
+//     }
+// })
 
-export default store
+// export default store
 
  
