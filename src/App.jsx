@@ -114,10 +114,10 @@ function App() {
   }])
   return (
     <>
-      <TvContext >
-        <Provider store={store}>
+      <TvContext>
+        {/* <Provider store={store}> */}
           <RouterProvider router={root}></RouterProvider>
-        </Provider>
+        {/* </Provider> */}
       </TvContext>
     </>
   )
